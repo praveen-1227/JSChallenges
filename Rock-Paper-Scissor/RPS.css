@@ -1,0 +1,25 @@
+.container{
+    border: 1px solid black;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+   
+}
+
+.flex_box{
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+
+
+ .flex_box img:hover{
+    box-shadow: 0px 10px 50px rgb(247, 4, 16);
+ }
+
+ .flex_box div{
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+}

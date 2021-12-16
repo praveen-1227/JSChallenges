@@ -12,11 +12,11 @@ function randomChoice(){
     return ['rock', 'paper', 'scissors'][Math.floor(Math.random() *3)];
 }
 
-// returns final result 
+// returns final result
 function rpsData(yourChoice,botChoice){
    var data = {
         'rock' : {'scissors':1, 'rock' : 0.5, 'paper':0},
-        'paper' : {'rock' : 1, 'paper' : 0.5, 'roscissorsck' : 0},
+        'paper' : {'rock' : 1, 'paper' : 0.5, 'scissors' : 0},
         'scissors' : {"paper" : 1, 'scissors' : 0.5, 'rock' : 0}
    };
    return data[yourChoice][botChoice];
@@ -55,7 +55,7 @@ function rpsFrontEnd(yourChoice,message,botChoice){
     humanDiv.innerHTML = "<img src="+ imgData[yourChoice]+" height=150 width=150 />";
     botDiv.innerHTML = "<img src="+ imgData[botChoice]+" height=150 width=150 />";
     messageDiv.innerHTML="<h1 style='color:" +message['color']+ "; font-size: 80px; padding:30px '>"+message['message']+"</h1>"; 
-    document.getElementById('rpsPick').appendChild(humanDiv).appendChild(messageDiv).appendChild(botDiv).displ;
+    document.getElementById('rpsPick').appendChild(humanDiv).appendChild(messageDiv).appendChild(botDiv);
 
 
 }
